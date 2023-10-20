@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            max-width: 100vw;
+            padding: 0.5rem;
+        }
+
+        main{
+            border: 2px solid;
+            padding: 1rem;
+        }
+        img{
+            max-width: 100%;
+            border-radius: 50%;
+            aspect-ratio: 16/9; 
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            border: 2px solid;
+            gap: 2%;
+            
+        }
+
+        .text {
+            text-align: center;
+        }
+        .md {
+            border: solid 2px;
+            margin: 10px;
+            padding: 10px;    
+        }
+        .imf {   
+            padding: 20px;
+            display: flex;
+        }
+       .form {
+        display: inline-block;
+
+
+       }
+       @media(width<=600px){
+        .container{
+            flex-direction: column;
+        }
+       }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="text">
+            <h1> event1</h1>
+            <p>numbe of available seats:23</p>
+        </div>
+        <div class="container">
+            <div class="imf">
+                <div class="md"> <img src="AA1iifs6.jpg">
+                </div>
+            </div>
+            
+            <div class="form">
+                <form action="#" method="get">
+                    <label for="username">Name</label>
+                    
+                    <input type="text" name="name" id="username" placeholder="Enter your name">
+                    <br>
+                    <br>
+                    <label for="mail-id">Email</label>
+                    <input type="email" name="mail" id="mail-id" placeholder="Enter your mail id">
+                    <br>
+                    <br>
+                    <label for="mobile">Phone No</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter your phone number"><br>
+                    <br>
+                    <br>
+                    <label for="seat">Seat</label>
+                    <select name="seat" id="seat">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="attendee">Name of attendee</label>
+                    <input type="text" name="attendee" id="attendee" placeholder="Attendee name">
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="submit" value="Cancel">
+                </form>
+            </div>
+            
+        </div>
+
+
+    </main>
+</body>
+
+</html>
