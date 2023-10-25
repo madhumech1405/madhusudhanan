@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    
+</head>
+<style>
+    body{
+    background-color: ffd;
+}
+.gird-container{
+    display: grid;
+grid-template-rows: auto  25% 30% auto ;
+  
+  gap: 1rem;
+  border-radius: 5rem;
+   
+}
+.gird-item{
+    border: 1px solid black;
+    text-align: center;
+    padding:10%;
+}
+.item1{
+grid-column:1/span 4 ;
+color: white;
+height: 1%;
+display: flex;
+width: 100%;
+
+background-color: rgb(0,0,128)
+
+
+
+
+}
+.item2{
+    grid-template-columns: 2;
+    grid-row: 2/span 3;
+ background-color: black;
+    border-radius: 1rem;
+    
+}
+.item3{
+    grid-column: 2/span 3;
+    border-radius: 1rem;
+    margin-bottom: 8rem;
+    margin-right: 3rem;
+    margin-left: 5rem;
+    
+    background-color: black;
+    text-align: start;
+}
+.item7{
+    grid-column:2/span 3 ;
+    background-color: black;
+    border-radius: 2rem;
+}
+.item4,.item5,.item6{
+    border-radius: 1rem;
+    background-color: black;
+
+}
+body{
+    background-color: bisque;
+}
+
+
+
+
+
+</style>
+<body>
+    <div class="gird-container">
+        <div class="gird-item item1">
+            <div class="iocn" style="font-size:xx-large;">
+            <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="text" ></div>
+        </div>
+        <div class="gird-item item2">2</div>
+        <div class="gird-item item3"><input  placeholder="seacrach"></div>
+        <div class="gird-item item4">4</div>
+        <div class="gird-item item5">5</div>
+        <div class="gird-item item6">6 </div>
+        <div class="gird-item item7">7</div>
+        
+    </div>
+</body>
+</html>
